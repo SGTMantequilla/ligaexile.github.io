@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exile Teams</title>
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='css/estilos.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/png">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='style.css') }} ">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Balsamiq+Sans:wght@700&family=Basic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap" rel="stylesheet"> 
+<body>
+    <header>
+        <div class="ancho">
+            <div class="logo">
+                <a href="/">
+                    <img src="/static/images/BotonHome.png" alt="">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/equipos">Participantes</a></li>
+                    <li><a href="/brackets">Brackets</a></li>
+                    <li><a href="/fechas">Fechas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {%block content%}
+    {%endblock%}
+</body>
+</html>
